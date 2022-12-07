@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url(https://img.freepik.com/fotos-premium/hoja-fondo-papel-cuadricula-cuaderno-blanco-blanco-imagen-muy-detallada-extra-grande_598586-160.jpg?w=2000);
+}
+/* Esto es un comentario */
+#header h1 {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #E89005;
+    background-color: #E70E02;
+    border-width: 3px;
+    padding: 15px 0 15px 0;
+    margin: 0 30px 30px 30px;
+    font-family: "sofia",sans-serif;
+    text-align: center;
+}
+
+#main {
+    margin: 0 30px 0 30px;
+    height: max-content;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #fa8e58;
+    font-family: Helvetica, sans-serif;
+}
+
+.ingreso {
+    background-color: #E89005;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.ingreso::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    padding: 0;
+    border: none;
+    margin: 0;
+    width: 75%;
+    height: 40px;
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    outline: none;
+}
+
+.addbtn {
+    padding: 10px 0px 10px 0px;
+    width: 25%;
+    background: #F42B03;
+    color: #000000;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addbtn:hover {
+    background-color: #611101;
+    color: #E89005;
+  }
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style: none;
+    /*HAcer a los elementos de la lista no seleccionables*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover {
+    background-color: rgb(211, 208, 208);
+}
+
+/*Evento cuando haces check en un elemento de la lista*/
+ul li.checked {
+    background-color: #E89005;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}

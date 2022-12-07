@@ -1,0 +1,31 @@
+body {
+    color: #ffd60a;
+    background-color: #000814
+}
+
+hr {
+    border-color: #003566;
+}
+
+h1 {
+    color: aqua;
+    background-color: #003566;
+    border: 1px solid;
+    border-color:rgb(255, 0, 0);
+}
+
+h2 {
+    color: #9f8e35;
+    background-color: hsl(9, 80%, 10%);
+    border: 1px solid;
+    border-color: hsla(9, 80%, 10%, 0,5);
+}
+
+.imagenes {
+    width: 500px;
+    height: 500px;
+}
+
+#fotter {
+    background-color: #7d6904;
+}
